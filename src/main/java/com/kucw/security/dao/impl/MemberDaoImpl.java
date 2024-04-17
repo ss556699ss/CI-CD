@@ -54,7 +54,7 @@ public class MemberDaoImpl implements MemberDao {
 
         List<Member> memberList = namedParameterJdbcTemplate.query(sql, map, memberRowMapper);
 
-        if (memberList.size() > 0) {
+        if (memberList.size() > 0) { 
             return memberList.get(0);
         } else {
             return null;
