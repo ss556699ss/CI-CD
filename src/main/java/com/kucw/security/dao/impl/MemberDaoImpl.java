@@ -48,7 +48,7 @@ public class MemberDaoImpl implements MemberDao {
     public Member getMemberByEmail(String email) {
         String sql = "SELECT member_id, email, password, name, age FROM member WHERE email = :email";
 
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>(); 
         map.put("email", email);
 
         List<Member> memberList = namedParameterJdbcTemplate.query(sql, map, memberRowMapper);
