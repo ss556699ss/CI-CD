@@ -50,7 +50,7 @@ public class MemberDaoImpl implements MemberDao {
 
         Map<String, Object> map = new HashMap<>();
         map.put("email", email);
-        System.out.println("測試成功++++");
+        System.out.println("測試成功++++"); 
 
         List<Member> memberList = namedParameterJdbcTemplate.query(sql, map, memberRowMapper);
 
