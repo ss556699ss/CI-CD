@@ -65,8 +65,8 @@ public class MemberDaoImpl implements MemberDao {
     public Integer createMember(Member member) {
         String sql = "INSERT INTO member(email, password, name, age) VALUES (:email, :password, :name, :age)";
 
-        Map<String, Object> map = new HashMap<>(); 
-        map.put("email", member.getEmail());
+        Map<String, Object> map = new HashMap<>();
+        map.put("email", member.getEmail()); 
         map.put("password", member.getPassword());
         map.put("name", member.getName());
         map.put("age", member.getAge());
