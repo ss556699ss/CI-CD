@@ -32,4 +32,4 @@ jobs:
     - name: Trigger Jenkins build
       run: |
         curl -X POST "https://6d0a-211-72-164-10.ngrok-free.app/job/CI-CD/build?token=jenkins" \
-        --user a669955a:jenkins
+        --user a669955a:ss556699ss
