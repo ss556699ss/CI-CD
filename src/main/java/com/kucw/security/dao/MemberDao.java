@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface MemberDao {
 
-    Member getMemberById(Integer memberId);
+    Member getMemberById(Integer memberId); 
 
     Member getMemberByEmail(String email);
 
