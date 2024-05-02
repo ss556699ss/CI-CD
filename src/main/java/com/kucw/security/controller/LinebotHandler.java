@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 @LineMessageHandler
 public class LinebotHandler {
 
-    private final Logger log = LoggerFactory.getLogger(LinebotHandler.class);
+    private final Logger log = LoggerFactory.getLogger(LinebotHandler.class); 
 
     @EventMapping
     public Message handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
