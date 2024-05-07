@@ -61,6 +61,7 @@ public class MemberDaoImpl implements MemberDao {
         }
     }
 
+    //asher
     @Override
     public Integer createMember(Member member) {
         String sql = "INSERT INTO member(email, password, name, age) VALUES (:email, :password, :name, :age)";
