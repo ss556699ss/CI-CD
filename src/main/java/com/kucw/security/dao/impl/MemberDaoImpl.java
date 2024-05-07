@@ -82,11 +82,9 @@ public class MemberDaoImpl implements MemberDao {
 
     @Override
     public List<Role> getRolesByMemberId(Integer memberId) {
-        String sql = """
-                SELECT role.role_id, role.role_name FROM role
-                    JOIN member_has_role ON role.role_id = member_has_role.role_id
-                    WHERE member_has_role.member_id = :memberId
-                """;
+        String sql = "SELECT role.role_id, role.role_name FROM role\n" +
+                "                    JOIN member_has_role ON role.role_id = member_has_role.role_id\n" +
+                "                    WHERE member_has_role.member_id = :memberId";
 
         Map<String, Object> map = new HashMap<>();
         map.put("memberId", memberId);
