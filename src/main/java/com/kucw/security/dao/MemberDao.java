@@ -9,7 +9,7 @@ public interface MemberDao {
 
     Member getMemberById(Integer memberId);
 
-    Member getMemberByEmail(String email);
+    Member getMemberByEmail(String email); 
 
     Integer createMember(Member member);
 
