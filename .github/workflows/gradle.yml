@@ -19,5 +19,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Trigger Jenkins build
       run: |
-       curl -X POST "https://8855-211-72-164-10.ngrok-free.app/job/CI-CD/build?token=jenkins" --user a669955a:110727a0005680a2c3cb1c91b1b2e5fd70
+       curl -X POST "https://5a41-211-72-164-10.ngrok-free.app/job/CI-CD/build?token=jenkins" --user a669955a:110727a0005680a2c3cb1c91b1b2e5fd70
 
