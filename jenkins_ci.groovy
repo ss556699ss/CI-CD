@@ -18,6 +18,7 @@ pipeline {
                     def issues = new groovy.json.JsonSlurper().parseText(response.content)
                     issues.each { issue ->
                         echo "Issue #${issue.number}: ${issue.title}"
+                        echo "Content: ${issue.body}"  // 顯示 issue 的內文
                     }
                 }
             }
