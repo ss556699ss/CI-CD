@@ -12,7 +12,7 @@ pipeline {
                         customHeaders: [
                             [name: 'Accept', value: 'application/vnd.github+json'],
                             [name: 'Authorization', value: 'Bearer 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'],
-                            [name: 'X-GitHub-Api-Version', value: '2024-08-01']
+                            [name: 'X-GitHub-Api-Version', value: '2022-11-28']
                         ]
                     )
                     def issues = new groovy.json.JsonSlurper().parseText(response.content)
@@ -24,4 +24,3 @@ pipeline {
         }
     }
 }
-
