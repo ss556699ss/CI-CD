@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 @LineMessageHandler
 public class LinebotHandler {
-    #asFDG
+    #asFDGgfdgdg
     private final Logger log = LoggerFactory.getLogger(LinebotHandler.class); 
 
     @EventMapping
