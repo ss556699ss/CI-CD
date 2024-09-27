@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 public class LinebotHandler {
     #testsetsets
     private final Logger log = LoggerFactory.getLogger(LinebotHandler.class); 
-    // test
+    // testSWQQS
     @EventMapping
     public Message handleTextMessageEvent(MessageEvent<TextMessageContent> event) { 
         log.info("event: " + event);
