@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Lesson34Application {
-// JKKM
+// JKKMTGUYTUTU
     public static void main(String[] args) {
         SpringApplication.run(Lesson34Application.class, args);
     }
